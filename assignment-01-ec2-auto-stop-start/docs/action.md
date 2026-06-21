@@ -1,10 +1,16 @@
 ```mermaid
 flowchart TD
-    A[Lambda invoked] --> B[Describe running instances with tag Action=Auto-Stop]
-    B --> C[Stop each instance]
-    C --> D[Describe stopped instances with tag Action=Auto-Start]
-    D --> E[Start each instance]
-    E --> F[Print and return affected instance IDs]
+    A[Lambda invoked] --> B[Describe instances with tag Action=Auto-Stop]
+    B --> C{State is running?}
+    C -->|Yes| D[Stop instance]
+    C -->|No| E[Skip]
+    D --> F[Describe instances with tag Action=Auto-Start]
+    E --> F
+    F --> G{State is stopped?}
+    G -->|Yes| H[Start instance]
+    G -->|No| I[Skip]
+    H --> J[Print and return affected instance IDs]
+    I --> J
 ```
 
 
