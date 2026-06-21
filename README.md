@@ -2,6 +2,19 @@
 
 HeroVired serverless assignments using AWS Lambda and Boto3. Each folder contains a `lambda_function.py` handler.
 
+## Completed Assignments
+
+Four assignments completed with AWS setup, testing, and documentation (screenshots in each `docs/` folder).
+
+| # | Folder | Lambda function | Description | Documentation |
+|---|--------|-----------------|-------------|---------------|
+| 1 | `assignment-01-ec2-auto-stop-start` | `gk_ec2_start_stop` | Stop/start EC2 instances by `Action` tag | [action.md](assignment-01-ec2-auto-stop-start/docs/action.md) |
+| 2 | `assignment-02-s3-cleanup` | `gk_s3_cleanup` | Delete S3 objects older than 30 days | [action.md](assignment-02-s3-cleanup/docs/action.md) |
+| 5 | `assignment-05-ec2-auto-tagging` | `gk_ec2_auto_tag` | Tag EC2 instances on launch via EventBridge | [action.md](assignment-05-ec2-auto-tagging/docs/action.md) |
+| 8 | `assignment-08-comprehend-sentiment` | `gk_comprehend_sentiment` | Analyze review sentiment with Comprehend | [action.md](assignment-08-comprehend-sentiment/docs/action.md) |
+
+## All Assignments
+
 | # | Folder | Description |
 |---|--------|-------------|
 | 1 | `assignment-01-ec2-auto-stop-start` | Stop/start EC2 instances by `Action` tag |
