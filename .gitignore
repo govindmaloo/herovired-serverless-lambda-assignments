@@ -9,8 +9,4 @@ venv/
 .DS_Store
 .idea/
 .vscode/
-
-# Other assignments (not part of this repo yet)
-assignment-0[2-9]-*/
-assignment-1[0-9]-*/
-assignment.md
+.qodo/
